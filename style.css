@@ -1,0 +1,343 @@
+
+*, *:before, *:after 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    font-weight: 400;
+    font-size: 100%;
+}
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background:  crimson;
+}
+
+header 
+{
+    background-color:white;
+    color: #fff;
+    padding:  0;
+    margin:0;
+    height: 100px;
+    position: fixed; /* Add position: fixed to keep the header fixed at the top */
+    width: 100%; /* Make the header span the full width */
+    z-index: 1000;
+}
+.ul
+{
+    text-decoration-color: black;
+    padding:  0;
+    margin:0;
+    height: 80px;
+}
+.nav-item 
+{
+    list-style: none; /* Remove default list bullets */
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between list items */
+}
+.nav-link 
+{
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Set the text color for the links */
+    font-weight: bold; /* Set the font weight to bold */
+}
+/* Change the color of the navigation/menu button when it is collapsed */
+.navbar-toggler.collapsed {
+    color: black;
+}
+/* Change the color of the navigation/menu button when it is not collapsed */
+.navbar-toggler:not(.collapsed) {
+    color: black;
+}
+
+.nav-item.active .nav-link
+{
+    color:orange; /* Change the text color for the active link */
+}
+.main-btn
+{
+    
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.navigation-wrap{
+    position: fixed;
+    width:100%;
+    left:0;
+    z-index: index 1000;
+}
+.navigation-wrap.scroll-On {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
+    background: white;
+}
+
+h1{
+    font-size:3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    color:black;
+}
+p{
+    font-size: 1rem;
+    font-weight:400;
+    color:black;
+    
+}
+.main-btn{
+    display:inline-block;
+    padding:0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    color:white;
+    font-size: 0.9375rem;
+    text-transform: capitalize;
+}
+.white-btn{
+    padding:0.625rem 1.875rem;
+    display:inline-block;
+    /*text-decoration: black;
+    font: size 10rem;*/
+    text-decoration: none; /* Use 'none' for text-decoration */
+    font-size: 1rem;
+}
+.main-btn:hover{
+    background-color:cornflowerblue;
+}
+.white-btn:hover{
+    background-color:cornflowerblue;
+}
+.top-banner
+{
+    width: 100%;
+    background: url('../images/bg/bg-1.jpg');
+    background-size: cover;
+    padding: 16.875rem 9.375rem;
+}
+h2{
+    font-weight:700px;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    line-height:3rem;
+}
+.counter-section{
+    background-color: crimson;
+    padding:2.5rem 0;
+}
+.counter-section p{
+    color: white;
+    text-transform: uppercase;
+}
+
+.wrapper{
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+.text-content{
+    width: 70px;
+    margin:auto;
+}
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2{
+    color:white;
+}
+.about-section{
+    background-color: white;
+}
+.about-section.card,
+.about-section.card img{
+    border-radius: 0.625rem;
+}
+.about-section.tet-sec{
+    padding-left: 2rem;
+}
+.food-type{
+    padding-top: 3.25rem;
+}
+food-type ul li{
+    font-size: 1rem;
+    color:rgb(13, 11, 16);
+    line-height:32px;
+    position:relative;
+    margin-left: 30px;
+}
+food-type ul li::before{
+    position: absolute;
+    left:-2.1875rem;
+    color:crimson;
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 free";
+    content: '\f07a';
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+#story {
+    height: 28.125rem;
+    width: 100%;
+    background-image: url('../images/bg/bg-2.jpg'); /* Add a semicolon here */
+    background-position: center; /* Correct the positioning */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 100px 0; /* Use 'padding' property correctly */
+    text-align: center;
+}
+
+.story-section h2 {
+    color: crimson;
+}
+
+#story h2 {
+    color: black;
+}
+.explore-food .card{
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+}
+.explore-food .card img{
+    border-radius: 0.9375rem;
+    object-fit: cover;
+    height: 350px;;
+}
+.explore-food .card span{
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color:  crimson;
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid white;
+}
+.explore-food .card span del{
+    color: grey;
+    margin-left: 0.5rem;
+}
+h4{
+    color: black;
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+h5{
+    color: crimson; 
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.testimonial-section{
+    background-color: crimson; 
+}
+.testimonial-section .carousel-item{
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: white;
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+.testimonial-section .carousel-caption img{
+    max-width:5rem;
+    border-radius:50%;
+    padding:0.3125rem;
+}
+.testimonial-section .carousel-item .carousel-caption p{
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0.625rem;
+}
+
+.testimonial-section .carousel-indicators{
+    bottom: -2.8125rem;
+}
+.testimonial-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+.testimonial-section .carousel-indicators button.active{
+    opacity: 1;
+}
+.faq h4 span{
+    color: crimson; 
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+}
+.book-food{
+    width:100%;
+    background: url('../images/bg/bg-3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem 0;
+}
+.newsletter{
+    width: 55%;
+    margin: 0 auto;
+}
+.newsletter.form-control{
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1875rem solid grey;
+    color: black;
+    font-weight: 700;
+}
+.newsletter.form-control:hover,
+.newsletter.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color:  crimson; 
+}
+.footer{
+    background: crimson; 
+}
+.footer .footer-link {
+    font-size:1rem;
+    color: white;
+    padding:0 1.875rem;
+}
+.footer .footer-link :hover{
+    color: white  !important;
+}
+.footer a i{
+    font-size: 1.5rem;
+    color: white;
+    padding: 0 1rem;
+}
+
+
